@@ -7,17 +7,18 @@
 int main(void)
 {
 	int n;
-	int lastDigit;
+	int lastnum;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastDigit = n % 10;
+	lastnum = n % 10;
 
-	if(lastDigit > 5)
-	printf("Last digit of %n is %i and is greater than 5", n, lastDigit);
-	else if(lastDigit = 0)
-	printf("Last digit of %n is %i and is greater than 5\n", n, lastDigit);
+	if (lastnum > 5)
+	printf("Last digit of %d is %d and is greater than 5\n", n, lastnum);
+	else if (lastnum == 0)
+	printf("Last digit of %d is %d and is 0\n", n, lastnum);
 	else
-	printf("Last digit of %n is %i and is less than 6 and not 0\n", n, lastDigit);
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastnum);
+
 	return (0);
 }
