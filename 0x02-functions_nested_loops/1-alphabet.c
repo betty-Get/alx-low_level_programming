@@ -1,13 +1,13 @@
-#include <main.h>
+#include "main.h"
 /**
- * main - main block
- * Description: Get a random number and print the number
- * and if it is positive, negative, or zero
- * Return: 0
- */
+ * print_alphabet - prints alphabet in lowercase
+ *
+ **/
+void print_alphabet(void)
+{
+	char c;
 
- void print_alphabet(void){
-        for(char i='a'; i <= 'z'; i++){
-            putchar(i);
-            putchar('\n');
-        }
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
+	_putchar('\n');
+}
